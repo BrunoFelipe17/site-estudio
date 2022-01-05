@@ -6,7 +6,7 @@
 
 (function () {
   new InstagramFeed({
-    username: "instagram",
+    username: "estudiokarlabruna",
     container: document.getElementById("instagram-feed"),
     display_profile: true,
     display_biography: true,

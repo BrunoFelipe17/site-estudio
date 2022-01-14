@@ -19,14 +19,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <header class="container">
       <div class="desktop-only">
         <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__list-item"><a href="#">Home</a></li>
+            <li class="menu__list-item">
+              <a href="#" class="current">Home</a>
+            </li>
             <li class="menu__list-item"><a href="#">A fotógrafa</a></li>
             <!-- <li class="menu__list-item"> -->
             <img src="./assets/img/logo_2.svg" alt="" class="logo_header" />
@@ -35,6 +42,30 @@
             <li class="menu__list-item"><a href="#">Contato</a></li>
           </ul>
         </nav>
+      </div>
+      <div class="mobile-only">
+        <div class="top-menu">
+          <img src="./assets/img/logo_2.svg" alt="" class="logo_header" />
+          <div id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="menu-mobile__overlay">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a href="#" class="current">Home</a>
+                </li>
+                <li class="menu__list-item"><a href="#">A fotógrafa</a></li>
+                <li class="menu__list-item"><a href="#">Como funciona</a></li>
+                <li class="menu__list-item"><a href="#">Contato</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
     <div id="slider">
@@ -55,14 +86,32 @@
       <div class="container">
         <h1>estúdiokarlabruna</h1>
         <div class="estudio__items">
-          <div class="estudio__items-item">
-            <p>Como funciona nosso trabalho</p>
-          </div>
-          <div class="estudio__items-item">
-            <p>Saiba quando agendar seu ensaio</p>
-          </div>
-          <div class="estudio__items-item"><p>Conheça nosso acervo</p></div>
-          <div class="estudio__items-item"><p>Fale conosco</p></div>
+          <a href="#"
+            ><div class="estudio__items-item estudio__items-item-1">
+              <div class="estudio__items-item-overlay">
+                <p>Como funciona nosso trabalho</p>
+              </div>
+            </div></a
+          >
+          <a href="#"
+            ><div class="estudio__items-item estudio__items-item-2">
+              <div class="estudio__items-item-overlay">
+                <p>Saiba quando agendar seu ensaio</p>
+              </div>
+            </div></a
+          >
+          <a href="#"
+            ><div class="estudio__items-item estudio__items-item-3">
+              <div class="estudio__items-item-overlay">
+                <p>Conheça nosso acervo</p>
+              </div>
+            </div></a
+          >
+          <a href="#"
+            ><div class="estudio__items-item estudio__items-item-4">
+              <div class="estudio__items-item-overlay"><p>Fale conosco</p></div>
+            </div></a
+          >
         </div>
       </div>
     </section>
@@ -72,15 +121,49 @@
 
       <div class="depoimentos_slider">
         <div class="depoimento">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-            aperiam corrupti placeat obcaecati nisi mollitia suscipit odio
-            necessitatibus unde harum iste totam, nesciunt dolorum incidunt
-            voluptatem nihil aspernatur cum laboriosam. Pariatur nesciunt esse,
-            tempora eos ullam adipisci neque ducimus vitae natus sit facilis
-            fugiat consequatur numquam vel laborum nemo dolorum quos dolorem
-            aperiam, consequuntur enim. Maiores ex laboriosam eaque quasi!
-          </p>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Velit aperiam corrupti placeat obcaecati nisi mollitia
+                  suscipit odio necessitatibus unde harum iste totam, nesciunt
+                  dolorum incidunt voluptatem nihil aspernatur cum laboriosam.
+                  Pariatur nesciunt esse, tempora eos ullam adipisci neque
+                  ducimus vitae natus sit facilis fugiat consequatur numquam vel
+                  laborum nemo dolorum quos dolorem aperiam, consequuntur enim.
+                  Maiores ex laboriosam eaque quasi!
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Velit aperiam corrupti placeat obcaecati nisi mollitia
+                  suscipit odio necessitatibus unde harum iste totam, nesciunt
+                  dolorum incidunt voluptatem nihil aspernatur cum laboriosam.
+                  Pariatur nesciunt esse, tempora eos ullam adipisci neque
+                  ducimus vitae natus sit facilis fugiat consequatur numquam vel
+                  laborum nemo dolorum quos dolorem aperiam, consequuntur enim.
+                  Maiores ex laboriosam eaque quasi!
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Velit aperiam corrupti placeat obcaecati nisi mollitia
+                  suscipit odio necessitatibus unde harum iste totam, nesciunt
+                  dolorum incidunt voluptatem nihil aspernatur cum laboriosam.
+                  Pariatur nesciunt esse, tempora eos ullam adipisci neque
+                  ducimus vitae natus sit facilis fugiat consequatur numquam vel
+                  laborum nemo dolorum quos dolorem aperiam, consequuntur enim.
+                  Maiores ex laboriosam eaque quasi!
+                </p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+          </div>
         </div>
       </div>
     </section>
@@ -122,14 +205,18 @@
         ></iframe>
       </div>
       <div class="insta">
-        Saiba mais sobre o @estudiokarlabruna
+        <p>
+          Saiba mais sobre o
+          <span class="insta-account">@estudiokarlabruna</span>
+        </p>
+        <!-- SnapWidget -->
         <!-- SnapWidget -->
         <!-- SnapWidget -->
         <!-- SnapWidget -->
         <!-- SnapWidget -->
         <script src="https://snapwidget.com/js/snapwidget.js"></script>
         <iframe
-          src="https://snapwidget.com/embed/979844"
+          src="https://snapwidget.com/embed/981080"
           class="snapwidget-widget"
           allowtransparency="true"
           frameborder="0"
@@ -140,16 +227,16 @@
     </section>
     <footer>
       <div class="divider"><p>Fotografia feita para durar</p></div>
-      <img src="./assets/img/logo_1.svg" alt="" />
     </footer>
     <div id="instagram-container"></div>
   </body>
+
   <script
     src="https://cdn2.woxo.tech/a.js#61d4daacd2aa11001685f2b7"
     async
     data-usrc
   ></script>
-  <script src="./assets/js/instagramFeed.min.js"></script>
-  <script></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
   <script src="./assets/js/app.js"></script>
 </html>

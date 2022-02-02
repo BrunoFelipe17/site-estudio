@@ -115,3 +115,5 @@ menuHamburger.addEventListener("click", function () {
     menuOverlay.style.right = "0";
   }
 });
+
+var scroll = new SmoothScroll('a[href*="#"]');

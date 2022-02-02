@@ -209,7 +209,8 @@ img {
   padding: 90px 0;
 }
 
-.description__title {
+.description__title,
+.como-funciona__title {
   font-family: "modernline";
   font-size: 4.5rem;
   margin-bottom: 20px;
@@ -224,12 +225,18 @@ img {
 
 .description__content p,
 .depoimento p,
-.fotografa_text p {
+.fotografa_text p,
+.como-funciona_content p,
+.como-funciona_content li {
   text-align: center;
   font-size: 1.8rem;
   line-height: 1.5;
   font-family: "Source Sans Pro", sans-serif;
   color: #353535;
+}
+.como-funciona_content li {
+  font-weight: bold;
+  margin-top: 30px;
 }
 
 section {
@@ -250,6 +257,11 @@ section {
   letter-spacing: 10px;
   font-size: 1.6rem;
   color: var(--menu-color);
+}
+
+#como-funciona {
+  background: #ffe8d6;
+  padding: 6rem 0;
 }
 
 .estudio__items {
@@ -459,6 +471,11 @@ h1 {
 
 .fotografa_text {
   flex: 2;
+}
+
+.como-funciona_content {
+  text-align: center;
+  margin: 6rem 1rem;
 }
 
 @media only screen and (max-device-width: 480px) {

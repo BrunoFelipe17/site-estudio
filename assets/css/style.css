@@ -223,7 +223,8 @@ img {
 }
 
 .description__content p,
-.depoimento p {
+.depoimento p,
+.fotografa_text p {
   text-align: center;
   font-size: 1.8rem;
   line-height: 1.5;
@@ -424,6 +425,40 @@ h1 {
 
 .mobile-only {
   display: none;
+}
+
+#fotografa {
+  background: rgb(221, 190, 169);
+  background: linear-gradient(
+    180deg,
+    rgba(221, 190, 169, 1) 65%,
+    rgba(255, 255, 255, 1) 65%
+  );
+  padding: 30px 0;
+  flex: 1 1 0px;
+}
+
+.fotografa_content {
+  display: flex;
+  gap: 60px;
+}
+
+.fotografa_photo {
+  /* width: 100%; */
+  flex: 1;
+  /* height: 450px; */
+  background: var(--menu-color);
+}
+
+.text-container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 130rem;
+}
+
+.fotografa_text {
+  flex: 2;
 }
 
 @media only screen and (max-device-width: 480px) {
